@@ -1,0 +1,37 @@
+name: provisional-data
+
+on:
+  push:
+    branches: main
+  schedule:
+    - cron: "30 */12 * * *"
+
+jobs:
+  provis-data:
+    runs-on: windows-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+      
+    steps:
+      - name: checkout repo    
+        uses: actions/checkout@v3
+        
+      - name: checkout high_res_cyano
+        uses: actions/checkout@v3
+        with:
+          repository: USEPA/high_res_cyano
+          path: high_res_cyano
+          token: ${{ secrets.MY_TOKEN }}  
+          
+      - name: copy over csvs
+        run: |
+          cp high_res_cyano/data/provisional/*.* .
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add *.csv
+          git commit -am "copied files"
+          git push 
