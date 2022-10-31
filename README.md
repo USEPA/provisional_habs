@@ -15,11 +15,12 @@ provisional data and they may change.
 # Data Access
 
 The provisional data are provided as comma delimited files and are suitable for 
-use with spreadsheets or easily read into many common programing languages 
-(e.g. R, python, etc.).  
+use with spreadsheets or easily read into many common programming languages 
+(e.g. R, python, etc.).  The easiest way to download files is right click on the 
+links below and select "Save link as...".
 
-- [2021 HABs Data for Shubael and Hamblin Ponds](https://github.com/USEPA/provisional_habs/raw/main/cc_hab_provisional_data_2021.csv)
-- [2022 HABs Data for Shubael and Hamblin Ponds](https://github.com/USEPA/provisional_habs/raw/main/cc_hab_provisional_data_2022.csv)
+- [2021 HABs Data for Shubael and Hamblin Ponds](https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2021.csv)
+- [2022 HABs Data for Shubael and Hamblin Ponds](https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2022.csv)
 
 # Data Dictionary
 
