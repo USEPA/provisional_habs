@@ -12,8 +12,6 @@ flow-through system, aka FLAMe, and water samples that are processed in a lab
 for various measurements.  The data from these sources are provided here as 
 provisional data and they may change.
 
-<a href="https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2021.csv" download="test.csv">Click Me!</a>
-
 # Data Access
 
 The provisional data are provided as comma delimited files and are suitable for 
@@ -22,11 +20,26 @@ use with spreadsheets or easily read into many common programming languages
 links below and select "Save link as...".
 
 - [2021 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2021.csv?raw=true)
-- [2022 HABs Data for Shubael and Hamblin Ponds](https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2022.csv)
+- [2022 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2022.csv?raw=true)
 
 These data are made available with the [Creative Commons Zero Public Domain Dedication](LICENSE.md).
 
 # Data Dictionary
+
+| Field Name | Data Type                     | Details                                         |
+|------------|-------------------------------|-------------------------------------------------|
+| date       | Date                          | The date data was collected: YYYY-MM-DD         |
+| time       | Hours, Minutes, Seconds (hms) | The time data was collected: Eastern Time, HH::MM:SS|
+| waterbody  | Character                     | Name of the waterbody: shubael or hamblin|
+| site       | Character                     | Site identifier within the waterbody: 1-4 or b for the buoy site|
+| depth      | Numeric                       | The depth, in meters, the mmeasurement was collected|
+| field_dups | Character                     | Field duplicate identifier                      |
+| lab_reps   | Character                     | Lab replicate identifier                       |
+| device     | Character                     | Identifier for device that collected data       |
+| variable   | Character                     | The name of the variable                        |
+| units      | Character                     | Units for the variable                          |
+| value      | Numeric                       | The measured value                              |
+| notes      | Character                     | Notes about the measurement, including QA Flags |
 
 # Disclaimer
 
