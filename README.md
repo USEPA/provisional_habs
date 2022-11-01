@@ -19,7 +19,7 @@ use with spreadsheets or easily read into many common programming languages
 (e.g. R, python, etc.).  The easiest way to download files is right click on the 
 links below and select "Save link as...".
 
-- <a href="https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2021.csv" download>2021 HABs Data for Shubael and Hamblin Ponds</a>
+- [2021 HABs Data for Shubael and Hamblin Ponds](https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2021.csv?mimeType=text/csv)
 - [2022 HABs Data for Shubael and Hamblin Ponds](https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2022.csv)
 
 # Data Dictionary
