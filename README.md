@@ -16,8 +16,8 @@ provisional data and they may change.
 
 The provisional data are provided as comma delimited files and are suitable for 
 use with spreadsheets or easily read into many common programming languages 
-(e.g. R, python, etc.).  The easiest way to download files is right click on the 
-links below and select "Save link as...".
+(e.g. R, python, etc.).  The easiest way to download files is follow the 
+links below and when you see the data, right click and  select "Save as...".
 
 - [2021 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2021.csv?raw=true)
 - [2022 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2022.csv?raw=true)
