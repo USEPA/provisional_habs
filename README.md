@@ -21,8 +21,10 @@ use with spreadsheets or easily read into many common programming languages
 (e.g. R, python, etc.).  The easiest way to download files is right click on the 
 links below and select "Save link as...".
 
-- [2021 HABs Data for Shubael and Hamblin Ponds](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/USEPA/provisional_habs/blob/main/cc_hab_provisional_data_2021.csv)
+- [2021 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2021.csv?raw=true)
 - [2022 HABs Data for Shubael and Hamblin Ponds](https://raw.githubusercontent.com/USEPA/provisional_habs/main/cc_hab_provisional_data_2022.csv)
+
+These data are made available with the [Creative Commons Zero Public Domain Dedication](LICENSE.md).
 
 # Data Dictionary
 
