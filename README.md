@@ -24,6 +24,8 @@ links below and when you see the data, right click and  select "Save as...".
 
 These data are made available with the [Creative Commons Zero Public Domain Dedication](LICENSE.md).
 
+As these data are finalized, we expect to make them available via GitHub and as a Zenodo archive.  Additional data papers may be published on these data as well.  Any archives and final data will be documented here.  We expect this to occur once we have 3-4 years of data collected.
+
 # Data Dictionary
 
 | Field Name | Data Type                     | Details                                         |
@@ -40,6 +42,26 @@ These data are made available with the [Creative Commons Zero Public Domain Dedi
 | units      | Character                     | Units for the variable                          |
 | value      | Numeric                       | The measured value                              |
 | notes      | Character                     | Notes about the measurement, including QA Flags |
+
+# Automated Quality Control Checks
+
+A number of automated quality control (QC) checks will be run on the data as they are added to the dataset.  As of 2022-11-02, these are limited to data being collected via two water quality buoys.  For these data we use two different checks.  First, we look for values that exceed historic maximums and minimums and second, we identify values that exceed the published ranges of the sensors we are using  The purpose of the historic range checks are to highlight potentially unusual numbers and do not necessarily mean the values should be removed.  We expect hone these checks over time. Values outside of the sensor capabilities would either indicate data that should be removed or data that should be set to the sensor minimums and maximums.  For the provisional datasets we have made no changes to data but instead have flagged these data in the "notes" column.  The historic and published senors ranges are listed below.
+
+| Parameter                      | Units   | Historic Range Check | Detection Limits |
+|--------------------------------|---------|----------------------|------------------|
+| Nitrate as Nitrogen            | mg/L    | 0.05 - 6             | 0.05 - 6         |
+| Water Temperature              | °C      | 6.6 - 29.0           | -5.0 - 50        |
+| pH                             |         | 6.2 - 8.6            | 0-14             |
+| specific conductivity          | mS/cm   | 0 - 0.14             | 0 - 1            |
+| dissolved oxygen concentration | mg/L    | 7.9 - 13.9           | 0 - 50           |
+| dissolved oxygen saturation    | percent | 78.1 - 115.3         | 0 - NA           |
+| turbidity                      | NTU     | 0.01 - 712.4         | 0 - 4000         |
+| chlorophyll                    | RFU     | 0.1 - 100            | 0 - 100          |
+| phycocyanin                    | RFU     | 0.1 - 35.4           | 0 - 100          |
+| barometric pressure            | in Hg   | 28.8 - 30.5          | 8.9 - 32.4       |
+| air temperature                | °C      | -0.9 - 31.4          | -40 - 80         |
+| wind speed                     | knots   | 0 - 45.7             | 0 - 77           |
+| magnetic wind direction        | degrees | 0-360                | 0-360            |
 
 # Disclaimer
 
