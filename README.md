@@ -34,7 +34,7 @@ As these data are finalized, we expect to make them available via GitHub and as 
 | time      | hms      | The time data was collected                     |Eastern Time, HH::MM:SS|
 | waterbody | character| Name of the waterbody                           |shubael or hamblin     |
 | site      | character| Site identifier within the waterbody            |1-4 or b for the buoy site|
-| depth     | character| Depth, in meters, the measurement was collected |0-20, or int           |
+| depth     | character| Depth, in meters, the measurement was collected |0-20, or integrated    |
 | field_dups| numeric  | Field duplicate identifier                      |1-3,                   |
 | lab_reps  | numeric  | Lab replicate identifier                        |1-3,                   |  
 | device    | character| Identifier for device that collected data       |cb150, turner, flame, plate, cube, scope|
