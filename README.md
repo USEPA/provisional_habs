@@ -28,40 +28,40 @@ As these data are finalized, we expect to make them available via GitHub and as 
 
 # Data Dictionary
 
-| Field Name | Data Type                     | Details                                         |
-|------------|-------------------------------|-------------------------------------------------|
-| date       | Date                          | The date data was collected: YYYY-MM-DD         |
-| time       | Hours, Minutes, Seconds (hms) | The time data was collected: Eastern Time, HH::MM:SS|
-| waterbody  | Character                     | Name of the waterbody: shubael or hamblin|
-| site       | Character                     | Site identifier within the waterbody: 1-4 or b for the buoy site|
-| depth      | Numeric                       | The depth, in meters, the mmeasurement was collected|
-| field_dups | Character                     | Field duplicate identifier                      |
-| lab_reps   | Character                     | Lab replicate identifier                       |
-| device     | Character                     | Identifier for device that collected data       |
-| variable   | Character                     | The name of the variable                        |
-| units      | Character                     | Units for the variable                          |
-| value      | Numeric                       | The measured value                              |
-| notes      | Character                     | Notes about the measurement, including QA Flags |
+| Field Name| Data Type| Description                                     |Details/Possible Values|
+|-----------|----------|-------------------------------------------------|-----------------------|
+| date      | date     | The date data was collected                     |YYYY-MM-DD             |
+| time      | hms      | The time data was collected                     |Eastern Time, HH::MM:SS|
+| waterbody | character| Name of the waterbody                           |shubael or hamblin     |
+| site      | character| Site identifier within the waterbody            |1-4 or b for the buoy site|
+| depth     | character| Depth, in meters, the measurement was collected |0-20, or int           |
+| field_dups| numeric  | Field duplicate identifier                      |1-3,                   |
+| lab_reps  | numeric  | Lab replicate identifier                        |1-3,                   |  
+| device    | character| Identifier for device that collected data       |cb150, turner, flame, plate, cube, scope|
+| variable  | character| The name of the variable                        |no3-n, water temperature, ph, specific conductivity, dissolved oxygen sat., dissolved oxygen conc., turbidity, chlorophyll, phycocyanin, barometric pressure, air temperature, wind direction, wind speed|
+| units     | character| Units for the variable                          |mg/L, °C, NA, mS/cm, percent, FNU, RFU, in Hg, degrees|
+| value     | numeric  | The measured value                              ||
+| notes     | character| Notes about the measurement, including QA Flags |value less than historic minimum, value less than minimum detection limit, value greater than sensor maximum, value greater than historic maximum|
 
 # Automated Quality Control Checks
 
 A number of automated quality control (QC) checks will be run on the data as they are added to the dataset.  As of 2022-11-02, these are limited to data being collected via two water quality buoys.  For these data we use two different checks.  First, we look for values that exceed historic maximums and minimums and second, we identify values that exceed the published ranges of the sensors we are using  The purpose of the historic range checks are to highlight potentially unusual numbers and do not necessarily mean the values should be removed.  We expect hone these checks over time. Values outside of the sensor capabilities would either indicate data that should be removed or data that should be set to the sensor minimums and maximums.  For the provisional datasets we have made no changes to data but instead have flagged these data in the "notes" column.  The historic and published senors ranges are listed below.
 
-| Parameter                      | Units   | Historic Range Check | Detection Limits |
-|--------------------------------|---------|----------------------|------------------|
-| Nitrate as Nitrogen            | mg/L    | 0.05 - 6             | 0.05 - 6         |
-| Water Temperature              | °C      | 6.6 - 29.0           | -5.0 - 50        |
-| pH                             |         | 6.2 - 8.6            | 0-14             |
-| specific conductivity          | mS/cm   | 0 - 0.14             | 0 - 1            |
-| dissolved oxygen concentration | mg/L    | 7.9 - 13.9           | 0 - 50           |
-| dissolved oxygen saturation    | percent | 78.1 - 115.3         | 0 - NA           |
-| turbidity                      | NTU     | 0.01 - 712.4         | 0 - 4000         |
-| chlorophyll                    | RFU     | 0.1 - 100            | 0 - 100          |
-| phycocyanin                    | RFU     | 0.1 - 35.4           | 0 - 100          |
-| barometric pressure            | in Hg   | 28.8 - 30.5          | 8.9 - 32.4       |
-| air temperature                | °C      | -0.9 - 31.4          | -40 - 80         |
-| wind speed                     | knots   | 0 - 45.7             | 0 - 77           |
-| magnetic wind direction        | degrees | 0-360                | 0-360            |
+| Variable             | Units  | Historic Range Check | Detection Limits |
+|----------------------|--------|----------------------|------------------|
+|no3-n                 | mg/L   | 0.05 - 6             | 0.05 - 6         |
+|water temperature     | °C     | 6.6 - 29.0           | -5.0 - 50        |
+|ph                    |        | 6.2 - 8.6            | 0-14             |
+|specific conductivity | mS/cm  | 0 - 0.14             | 0 - 1            |
+|dissolved oxygen conc.| mg/L   | 7.9 - 13.9           | 0 - 50           |
+|dissolved oxygen sat. | percent| 78.1 - 115.3         | 0 - NA           |
+|turbidity             | NTU    | 0.01 - 712.4         | 0 - 4000         |
+|chlorophyll           | RFU    | 0.1 - 100            | 0 - 100          |
+|phycocyanin           | RFU    | 0.1 - 35.4           | 0 - 100          |
+|barometric pressure   | in Hg  | 28.8 - 30.5          | 8.9 - 32.4       |
+|air temperature       | °C     | -0.9 - 31.4          | -40 - 80         |
+|wind speed            | knots  | 0 - 45.7             | 0 - 77           |
+|wind direction        | degrees| 0-360                | 0-360            |
 
 # Disclaimer
 
