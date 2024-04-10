@@ -19,8 +19,7 @@ use with spreadsheets or easily read into many common programming languages
 (e.g., R, Python).  The easiest way to download files is follow the 
 links below and when you see the data, right click and  select "Save as...".
 
-- [2021 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2021.csv?raw=true)
-- [2022 HABs Data for Shubael and Hamblin Ponds](cc_hab_provisional_data_2022.csv?raw=true)
+***Links available in Spring 2024***
 
 These data are made available with the [Creative Commons Zero Public Domain Dedication](LICENSE.md).
 
