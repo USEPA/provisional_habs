@@ -24,7 +24,7 @@ jobs:
           
       - name: copy over csvs
         run: |
-          cp high_res_cyano/data/provisional/*.* .
+          cp high_res_cyano/data/provisional/hab_provisional*.* .
           
       - name: Commit files
         run: |

@@ -1,16 +1,21 @@
 
-# Provisional Harmful Algal Bloom research data for Shubael and Hamblin Ponds in Massachusetts
+# Provisional Harmful Algal Bloom research data
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 This repository houses provisional water quality monitoring datasets collected 
-from two ponds in Barnstable, MA.  These data are collected to help track, 
-understand and eventually forecast potential Harmful Algal Blooms (HABs).  We
-use several data sources for this effort which include: data buoys, an on-board,
-flow-through system, aka FLAMe, and water samples that are processed in a lab
-for various measurements.  The data from these sources are provided here as 
-provisional data and they may change. While the data provided here have had quality control checks applied, these data are considered provisional in nature. Quality checks may be updated during the course of the research study based upon new findings about the measurement technology. Final data versions may incorporate additional quality control checks after further analysis.
+from Lake Archer in Wrentham, MA and Mashapaug Pond in Providence, RI.  These 
+data are collected to help track, understand and eventually forecast potential 
+Harmful Algal Blooms (HABs).  We use several data sources for this effort which 
+include: data buoys, an on-board, flow-through system, aka FLAMe, and water 
+samples that are processed in a lab for various measurements.  The data from 
+these sources are provided here as provisional data and they may change. While 
+the data provided here have had quality control checks applied, these data are 
+considered provisional in nature. Quality checks may be updated during the 
+course of the research study based upon new findings about the measurement 
+technology. Final data versions may incorporate additional quality control 
+checks after further analysis.
 
 # Provisional Data Access
 
@@ -31,7 +36,7 @@ Final data associated with publications, after EPA clearance and peer review, ar
 |-----------|----------|-------------------------------------------------|-----------------------|
 | date      | date     | The date data were collected                     |YYYY-MM-DD             |
 | time      | hms      | The time data were collected                     |Eastern Time, HH::MM:SS|
-| waterbody | character| Name of the waterbody                           |shubael or hamblin     |
+| waterbody | character| Name of the waterbody                           |archer or mashapaug     |
 | site      | character| Site identifier within the waterbody            |1-4 or b for the buoy site|
 | depth     | character| Depth, in meters, the measurement was collected |0-20, or integrated    |
 | field_dups| numeric  | Field duplicate identifier                      |1-3,                   |
@@ -44,7 +49,7 @@ Final data associated with publications, after EPA clearance and peer review, ar
 
 # Automated Quality Control Checks
 
-A number of automated quality control (QC) checks will be run on the data as they are added to the dataset.  As of 2022-11-02, these are limited to data being collected via two water quality buoys.  For these data, we use two different checks.  First, we look for values that exceed historic maximums and minimums; second, we identify values that exceed the sensor manufacturer reported detection limits for the sensors we are using.  The purpose of the historic range checks are to highlight potentially unusual numbers and do not necessarily mean the values should be removed.  Values outside of the sensor capabilities would either indicate data that should be removed or data that should be set to the sensor minimums and maximums.  For the provisional datasets, we have made no changes to data but instead have flagged these data in the "notes" column.  The historic and sensor manufacturer reported detection limits for the sensors we are using are listed below.
+A number of automated quality control (QC) checks will be run on the data as they are added to the dataset.  For these data, we use two different checks.  First, we look for values that exceed historic maximums and minimums; second, we identify values that exceed the sensor manufacturer reported detection limits for the sensors we are using.  The purpose of the historic range checks are to highlight potentially unusual numbers and do not necessarily mean the values should be removed.  Values outside of the sensor capabilities would either indicate data that should be removed or data that should be set to the sensor minimums and maximums.  For the provisional datasets, we have made no changes to data but instead have flagged these data in the "notes" column.  The historic and sensor manufacturer reported detection limits for the sensors we are using are listed below.
 
 | Variable             | Units  | Historic Range Check | Sensor Manufacturer Detection Limits |
 |----------------------|--------|----------------------|------------------|
