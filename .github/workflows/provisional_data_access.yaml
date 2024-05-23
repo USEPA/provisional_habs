@@ -2,7 +2,7 @@ name: provisional-data
 
 on:
   schedule:
-    - cron: "30 */2 * * *"
+    - cron: "*/15 */1 * * *"
 
 jobs:
   provis-data:
