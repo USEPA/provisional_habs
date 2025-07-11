@@ -24,6 +24,7 @@ use with spreadsheets or easily read into many common programming languages
 (e.g., R, Python).  The easiest way to download files is follow the 
 links below and when you see the data, right click and  select "Save as...".
 
+- [2025 Provisional Data File](https://github.com/USEPA/provisional_habs/raw/main/hab_provisional_data_2025.csv)
 - [2024 Provisional Data File](https://github.com/USEPA/provisional_habs/raw/main/hab_provisional_data_2024.csv)
 
 These data are made available with the [Creative Commons Zero Public Domain Dedication](LICENSE.md).
